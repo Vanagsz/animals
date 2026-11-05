@@ -1,0 +1,15 @@
+body{
+    background-image: url('https://i.pinimg.com/originals/2e/78/c7/2e78c79cebbd4632cd41546a3138013e.gif');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    background-image: linear-gradient(to bottom, #1F1F1F, #5C353D);
+}
