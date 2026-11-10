@@ -1,46 +1,80 @@
-body{
+body {
     background-image: url('https://i.pinimg.com/originals/2e/78/c7/2e78c79cebbd4632cd41546a3138013e.gif');
     background-size: cover;
-    backdrop-filter: blur(15px);
-    height: 100vh;
-    padding:0;
-    margin:0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    color: #ffffff;
 }
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    padding: 30px 15px;
 }
-.box-container{
-    margin-top: 50px;
-    background: #3d3d3d;
-    background: linear-gradient(0deg,rgba(61, 61, 61, 0.55) 0%, rgba(0, 0, 0, 1) 100%);
+.box-container {
     width: 90%;
-    border-radius: 10px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(20, 20, 24, 0.82);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.45);
 }
-.heading{
+.heading {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
 }
-.cards{
-    border-radius: 10px;
-    background-color: black;
-    padding: 2px 16px;
+.heading h1 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 10px;
 }
 .card {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 40%;
-  }
-  .texts{
+    min-height: 180px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition:transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+.texts {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
+    text-align: center;
+    gap: 10px;
+}
+.card h4{
+    font-size: 22px;
+    margin: 0;
+    color: #ffffff;
+}
